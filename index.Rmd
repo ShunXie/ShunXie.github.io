@@ -13,22 +13,19 @@ The webpage is a brief introductory of myself.
 
 Hi, I am Shun Xie and you can call me Leo if it is more convenient for you. I am currently a first year Biostatistics student under public health data science track at Columbia University. But before I come to the US, I spent 8 years studying in the UK. I enjoy the time in both places and I also enjoy traveling all around world. For academic part, I am willing to learn new thesis and applying it. During my graduate study at Imperial, I was focused on applying distance correlation into an economic project, which no other economic paper has considered the new technique. I believe that the new methods can capture more non-linear correlation and therefore, it will be very helpful in data analysis. 
 
-## Resume
-A detailed resume is included in this webpage. [resume](resume/resume.html)
+## Personal Information
+
+A detailed resume is included in this webpage [resume](resume/resume.html). Links to my github document and linkedin are contained in the [personal link](personal_link.html) webpage
 
 
 
+## Github 
 
-Here is the font icon [font icon](https://fontawesome.com/icons)
+In my github repositories, there are 
 
+Here is some illustration of my work in github. I create a 
 
-
-<br><br><img src="images/NationalGeographic_2572187_3x2.webp" style="width:75%"><br>
-
-## New section
-
-Here is the plotly page [here](plotly.html)
-
+The repository of the webpage and dashboard can be accessed [here](https://github.com/ShunXie/sx2337.github.io)
 
 
 

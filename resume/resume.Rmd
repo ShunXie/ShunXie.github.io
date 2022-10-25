@@ -24,7 +24,7 @@ Contact Info {#contact}
 - <i class="fa fa-github"></i> [github.com/ShunXie](https://github.com/ShunXie)
 - <i class="fa fa-phone"></i> +1 917-853-6527
 - For more information, please contact me via email.
-- Back to [homepage](index.html)
+- Back to [homepage](https://shunxie.github.io/)
 
 
 Skills {#skills}

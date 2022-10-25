@@ -1,5 +1,5 @@
 ---
-title: "Airbnb Dashboard"
+title: "NY NOAA Dashboard"
 output: 
   flexdashboard::flex_dashboard:
     orientation: columns
@@ -53,6 +53,7 @@ ny_noaa_tidy %>%
   group_by(month) %>% 
   summarize(average_tmax = mean(tmax,na.rm=TRUE)) %>% 
   ungroup() %>% 
+  mutate(month = fct_relevel(month, month.abb)) %>% 
   plot_ly(y=~average_tmax,x=~month,type="bar" )%>% 
   layout(title = 'Boxplot for average tmax in all month')
 

@@ -11,25 +11,31 @@ library(tidyverse)
 library(p8105.datasets)
 library(flexdashboard)
 library(plotly)
-
+library(dplyr)
+library(rnoaa)
 ```
 
+
 ```{r,include = FALSE}
-data("nyc_airbnb")
-nyc_airbnb =
-  nyc_airbnb %>% 
-  mutate(rating = review_scores_location/2 ) %>%
-  select(
-    borough = neighbourhood_group, neighbourhood,price, room_type, lat, long,rating
-    ) %>% 
-  filter(
-    borough == "Manhattan",
-    room_type == "Entire home/apt",
-    price %in% 100:500
-) %>% 
-  drop_na(rating)
-  
-nyc_airbnb
+# get the data (by the information of rnoaa):
+stations <- ghcnd_stations()
+nystationids <-  stations %>% 
+  filter(state == "NY") %>% 
+  distinct(id)
+
+
+ny_noaa_tidy = 
+  ny_noaa %>% 
+  filter(id == nystationids$id) %>% 
+  separate(date,c('year','month','day'),sep='-') %>%
+  mutate(
+    year = as.integer(year),
+    month = as.integer(month),
+    day = as.integer(day)
+  ) %>% 
+  mutate(month = month.abb[month]) %>% 
+  mutate(tmax = as.integer(tmax), tmin = as.integer(tmin))
+
 ```
 
 
@@ -43,17 +49,13 @@ Column {data-width=650}
 ### Chart A
 
 ```{r}
-nyc_airbnb %>% 
-  #combine Price with the price and make it to a string
-  mutate(
-    text_label = str_c("Price: ",price, "\nRating: ",rating)
- ) %>% 
-  plot_ly(
-    #x is plot feature, ~ means comes from 
-    x = ~lat, y = ~long, color = ~price,
-    type = "scatter", mode = "markers",
-    alpha =.5, text = ~text_label
-  )
+ny_noaa_tidy %>%
+  group_by(month) %>% 
+  summarize(average_tmax = mean(tmax,na.rm=TRUE)) %>% 
+  ungroup() %>% 
+  plot_ly(y=~average_tmax,x=~month,type="bar" )%>% 
+  layout(title = 'Boxplot for average tmax in all month')
+
 ```
 
 Column {data-width=350}
@@ -62,21 +64,22 @@ Column {data-width=350}
 ### Chart B
 
 ```{r}
-nyc_airbnb %>% 
-  mutate(neighbourhood= fct_reorder(neighbourhood,price)) %>% 
-  plot_ly(y = ~price, color = ~neighbourhood,
-          type = "box")
+ny_noaa_tidy %>% 
+  filter(month=='Jan'|month=='Jul') %>% 
+  plot_ly(x=~tmin, y=~tmax, color = ~month, type = "scatter", mode = "markers") %>% 
+  layout(title = 'Scatter plot for tmax against tmin in January and July respectively')
+
 ```
 
 ### Chart C
 
 ```{r}
-nyc_airbnb %>% 
-  count(neighbourhood) %>% 
-  mutate(neighbourhood= fct_reorder(neighbourhood,n)) %>% 
-  plot_ly(x = ~neighbourhood, y = ~n,
-          type = "bar")
+ ny_noaa_tidy %>% 
+  filter(month=='Jan'|month=='Jul') %>% 
+  plot_ly(y=~tmax, color = ~month, type = "box") %>% 
+  layout(title = 'Boxplot for tmax in January and July respectively')
+
+
+#use: rmarkdown::render("dashboard.Rmd",output_format = "flexdashboard::flex_dashboard")
 ```
 
-use:
-rmarkdown::render("dashboard.Rmd",output_format = "flexdashboard::flex_dashboard")

@@ -6,9 +6,15 @@ output:
     toc_float: true
     theme: cosmo
 ---
+
+![](image/welcome.jpg)
+
 The webpage is a brief introductory of myself. 
-
-
+ 
+  
+   
+    
+    
 ## Introduction
 
 Hi, I am Shun Xie and you can call me Leo if it is more convenient for you. I am currently a first year Biostatistics student under public health data science track at Columbia University. But before I come to the US, I spent 8 years studying in the UK. I enjoy the time in both places and I also enjoy traveling all around world. For academic part, I am willing to learn new thesis and applying it. During my graduate study at Imperial, I was focused on applying distance correlation into an economic project, which no other economic paper has considered the new technique. I believe that the new methods can capture more non-linear correlation and therefore, it will be very helpful in data analysis. 

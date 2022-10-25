@@ -15,7 +15,7 @@ Hi, I am Shun Xie and you can call me Leo if it is more convenient for you. I am
 
 ## Personal Information
 
-A detailed resume is included in this webpage [resume](resume/resume.html). Links to my github document and linkedin are contained in the [personal link](personal_link.html) webpage
+A detailed resume is included in this webpage [resume](resume/resume.html). Links to my github document and linkedin are contained in the [personal link](personal_link.html) webpage.
 
 
 

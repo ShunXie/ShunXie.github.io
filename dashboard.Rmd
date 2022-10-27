@@ -55,7 +55,7 @@ ny_noaa_tidy %>%
   ungroup() %>% 
   mutate(month = fct_relevel(month, month.abb)) %>% 
   plot_ly(y=~average_tmax,x=~month,type="bar" )%>% 
-  layout(title = 'Boxplot for average tmax in all month')
+  layout(title = 'Barplot for average tmax in all month')
 
 ```
 

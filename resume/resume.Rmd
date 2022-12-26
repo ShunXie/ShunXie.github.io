@@ -77,6 +77,21 @@ New York, US
 Research Experience {data-icon=laptop}
 --------------------------------------------------------------------------------
 
+### Study of Life Expectancy
+
+Group Leader, Columbia University
+
+New York
+
+Nov 2022 - Dec 2022
+
+
+- Built main page of website using R and html language, published the website on github webpage
+- Impute dataset using k mean imputation with 4 groups regarding to countries income level and verified using k mean clustering 
+- Based on Pearson and distance correlation, confirmed that linear regression is sufficient for life expectancy analysis and achieved an adjusted R square of 0.78.
+- Chose as the paradigm of the projects and displayed in lecture’s webpage
+
+
 ### Correlation between Unemployment and Wages
 
 Master Thesis, Imperial College London
@@ -130,7 +145,7 @@ Jun 2020
 Professional Experience {data-icon=suitcase}
 --------------------------------------------------------------------------------
 
-### Parttime Assistant
+### Part-time Assistant
 
 Bank of America Merrill Lynch 
 
@@ -152,7 +167,7 @@ Jun 2020 - Aug 2020
 
 - Improved accuracy by imputing missing value using developed formula.
 - Analyze data extracted from Wind and generate analysis report on the feature of public equity fund
-
+- Investigated the idiosyncrasies of the mutual funds with more than 5 billion subscriptions and produced a research report
 
 ### Data Analyst, Intern
 
@@ -163,8 +178,9 @@ Shanghai, China
 Jul 2019 - Sep 2019
 
 - Contributed to a market research project to optimize the design of a new towelette product and boost sales
-
-
+- Conducted conjoint analysis to identify the weights of different properties of the product gathering consumers’ attention
+- Generated 8 randomly profiles comprising the four factors and gathered 60 responses to the profiles
+- Implemented the algorithm using R and determined that the production location was the major concern
 
 
 Teaching Experience {data-icon=chalkboard-teacher}

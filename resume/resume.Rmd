@@ -29,7 +29,7 @@ Contact Info {#contact}
 
 Skills {#skills}
 --------------------------------------------------------------------------------
-- Highly skilled in R, Python, LaTeX, Matlab, SPSS, STATA
+- R, Python, LaTeX, Matlab, SPSS, STATA, SAS, PySpark
 
 
 Disclaimer {#disclaimer}
@@ -71,6 +71,53 @@ New York, US
 
 2022
 
+First Year GPA: 4.0/4.3
+
+
+Professional Experience {data-icon=suitcase}
+--------------------------------------------------------------------------------
+
+### Data Analyst Intern
+
+Yum China
+
+Shanghai, China
+
+May 2023 - Aug 2023
+
+-	Identified anomalies in the data due to holidays by applying CNN on time series data
+-	Reconstructed weekly report after communication with operation team using HiveSQL; Improve SOP ability by supporting operation team to maintain weekly report dashboard
+-	Based on A/Btest for the new ai recommendation strategy on cltv1 (low-frequency user), discovered an improvement in ARPU but a decrease in transaction frequency; Proposed to solve the problem by splitting cltv1 into new and sleeping member groups
+-	Improved customer value by constructing user churn model using LightGBM/MLP (AUC: 0.86) and defined the KPI via customer return rate for churn model evaluation
+-	Offered a data-driven solution using Shapley Value and WOE during weekly meeting; Presented the solution with Altair/Seaborn visualization package to the operation team
+-	Summarize the key attributes of churn users through K-means clustering on PySpark
+
+
+
+### Data Analyst, Intern
+
+Caitong Security Asset Management Co. Ltd.
+
+Shanghai, China
+
+Jun 2020 - Aug 2020
+
+- Improved accuracy by imputing missing value using developed formula.
+- Analyze data extracted from Wind and generate analysis report on the feature of public equity fund
+- Investigated the idiosyncrasies of the mutual funds with more than 5 billion subscriptions and produced a research report
+
+### Data Analyst, Intern
+
+Hycon Research Co. Ltd. 
+
+Shanghai, China
+
+Jul 2019 - Sep 2019
+
+- Contributed to a market research project to optimize the design of a new towelette product and boost sales
+- Conducted conjoint analysis to identify the weights of different properties of the product gathering consumers’ attention
+- Generated 8 randomly profiles comprising the four factors and gathered 60 responses to the profiles
+- Implemented the algorithm using R and determined that the production location was the major concern
 
 
 
@@ -142,49 +189,19 @@ Jun 2020
 - Compared LSA, GloVe, and Word2vec models via theoretical analysis using intrinsic and extrinsic evaluation
 - Discovered no global difference among models after applying sentiment analysis on IMDB movie reviews
 
-Professional Experience {data-icon=suitcase}
+
+
+Activities {data-icon=chalkboard-teacher}
 --------------------------------------------------------------------------------
 
-### Part-time Assistant
+### Buldhism
 
-Bank of America Merrill Lynch 
-
-Remote
-
-Dec 2020 - Feb 2021
-
-
-- Built a customized ticker match machine that was similar to the Bloomberg ticker with Python to test whether input ticker string is valid and if it shows all the values of components if valid
-
-
-### Data Analyst, Intern
-
-Caitong Security Asset Management Co. Ltd.
+Teaching for algebra and differential equations for A-level. 
 
 Shanghai, China
 
-Jun 2020 - Aug 2020
+Jun 2018 - Jul 2018
 
-- Improved accuracy by imputing missing value using developed formula.
-- Analyze data extracted from Wind and generate analysis report on the feature of public equity fund
-- Investigated the idiosyncrasies of the mutual funds with more than 5 billion subscriptions and produced a research report
-
-### Data Analyst, Intern
-
-Hycon Research Co. Ltd. 
-
-Shanghai, China
-
-Jul 2019 - Sep 2019
-
-- Contributed to a market research project to optimize the design of a new towelette product and boost sales
-- Conducted conjoint analysis to identify the weights of different properties of the product gathering consumers’ attention
-- Generated 8 randomly profiles comprising the four factors and gathered 60 responses to the profiles
-- Implemented the algorithm using R and determined that the production location was the major concern
-
-
-Teaching Experience {data-icon=chalkboard-teacher}
---------------------------------------------------------------------------------
 
 ### QunYao Consulting.
 
